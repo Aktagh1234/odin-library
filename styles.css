@@ -1,0 +1,129 @@
+body {
+  font-family: 'Segoe UI', Arial, sans-serif;
+  background: #fdeff2;
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#new-book-btn {
+  margin: 2rem 0 1rem 0;
+  padding: 0.7rem 2rem;
+  background: #ff8fab;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+#new-book-btn:hover {
+  background: #ff74a2;
+}
+
+form {
+  background: #fff;
+  padding: 1.5rem 2rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(214, 51, 132, 0.1);
+  margin-bottom: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.7rem;
+  min-width: 300px;
+}
+form label {
+  font-weight: 500;
+  color: #5e5e5e;
+}
+form input[type="text"],
+form input[type="number"] {
+  padding: 0.5rem;
+  border: 1px solid #f4c2c2;
+  border-radius: 4px;
+  font-size: 1rem;
+}
+form input[type="checkbox"] {
+  width: 18px;
+  height: 18px;
+}
+form button[type="submit"] {
+  margin-top: 1rem;
+  background: #ff8fab;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 0.6rem 1.5rem;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+form button[type="submit"]:hover {
+  background: #ff74a2;
+}
+
+#book-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  padding: 2rem;
+  justify-content: center;
+  width: 100%;
+  box-sizing: border-box;
+  margin-top: 2rem;
+}
+
+.book-card {
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(214, 51, 132, 0.1);
+  padding: 1.2rem 1.5rem;
+  min-width: 220px;
+  max-width: 250px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  position: relative;
+}
+.card-header {
+  margin-bottom: 0.7rem;
+}
+.title {
+  margin: 0;
+  font-size: 1.2rem;
+  color: #d63384;
+}
+.author {
+  margin: 0.2rem 0 0 0;
+  font-size: 1rem;
+  color: #5e5e5e;
+}
+.card-body p {
+  margin: 0.3rem 0;
+  font-size: 1rem;
+}
+.read-status {
+  font-weight: bold;
+  color: #64c27b;
+}
+.read-status:not(:contains('Read')) {
+  color: #f28b82;
+}
+.remove-btn {
+  margin-top: 1rem;
+  background: #f28b82;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 0.5rem 1.2rem;
+  font-size: 0.95rem;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+.remove-btn:hover {
+  background: #e57373;
+}
